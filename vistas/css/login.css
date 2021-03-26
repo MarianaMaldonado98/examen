@@ -1,0 +1,48 @@
+body{
+        background: #e9ecef;
+      }
+
+      #submit{
+         background:#F4A119;
+         border-color: #F4A119;
+
+      }
+      #boton{
+      display: flex;
+      justify-content: center;
+      }
+
+      .login-logo {
+      color:black;
+      font-family: 'Train One', cursive;
+      font-size: 60px;
+      text-align: center;
+      margin-top: 8%;
+    }
+
+    .login-box {
+      width: 360px;
+      margin-top: 10px;
+      margin-left: 37%;
+      margin-right: 20%;
+      color:black;
+    }
+    @media (max-width: 768px) {
+      .login-box {
+        width: 90%;
+        margin-top: 20px;
+      }
+    }
+
+    .login-box-body {
+      background:white;
+      padding: 20px;
+      border-top: 0;
+      color: black;
+    }
+    .login-box-msg {
+      margin: 0;
+      text-align: center;
+      padding: 0 20px 20px 20px;
+      color:black;
+    }
