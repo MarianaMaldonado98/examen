@@ -24,9 +24,9 @@ switch ($_GET["op"]){
 			$ext = explode(".", $_FILES["imagen"]["name"]);
 			if ($_FILES['imagen']['type'] == "" || $_FILES['imagen']['type'] == "image/jpeg" || $_FILES['imagen']['type'] == "image/png")
 			{
-				$imagen = round(microtime(true)) . '.' . end($ext);
-				move_uploaded_file($_FILES["imagen"]["tmp_name"], "../files/productos/" . $imagen);
-			}
+				$numero_aleatorio = rand(1,100);
+				$imagen = 'Imagen' .$numero_aleatorio. '.' . end($ext);
+				move_uploaded_file($_FILES["imagen"]["tmp_name"], "../files/productos/" . $imagen);			}
 		}
 		
 		if (empty($id_producto)){
